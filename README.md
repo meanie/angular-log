@@ -25,11 +25,14 @@ angular.module('App.MyModule', [
 Use it in your modules:
 ```js
 $log.log('Log message');
+$log.info('Info');
 $log.warn('Warning');
 $log.error('Error');
 $log.debug('Debug');
 $log.trace();
-$log.assert(a, true);
+$log.clear();
+$log.dir(obj);
+$log.assert(val, true);
 ```
 
 ## Issues & feature requests
