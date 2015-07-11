@@ -22,9 +22,12 @@ angular.module('App.MyModule', [
 ]).controller('MyController', function($log) {
   //Use the $log service
 });
+```
 Use it in your modules:
 ```js
-$log.log('Log message');
+
+//Usage just like regular console
+$log.log('Log');
 $log.info('Info');
 $log.warn('Warning');
 $log.error('Error');
