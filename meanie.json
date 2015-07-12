@@ -1,6 +1,5 @@
 {
-  "cliVersion": "0.4.7",
-  "instructions": "https://github.com/meanie/angular-log#usage",
-  "postInstall": "",
-  "dependencies": {}
+  "cliVersion": "0.5.0",
+  "destination": "client/common/utility/log",
+  "instructions": "https://github.com/meanie/angular-log#usage"
 }
