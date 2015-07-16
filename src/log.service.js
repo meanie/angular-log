@@ -2,7 +2,7 @@
 /**
  * Module definition and dependencies
  */
-angular.module('Utility.Log.Service', [])
+angular.module('Log.Service', [])
 
 /**
  * Provider definition
