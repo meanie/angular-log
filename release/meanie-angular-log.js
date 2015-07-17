@@ -46,7 +46,7 @@ angular.module('Log.Service', [])
   /**
    * Service getter
    */
-  this.$get = ["$window", function($window) {
+  this.$get = ['$window', function($window) {
 
     //Get enabled/disabled log methods
     var enabled = this.enabled;
