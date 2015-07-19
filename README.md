@@ -76,11 +76,11 @@ Note that due to services not being available in the configuration phase of Angu
 
 ## Issues & feature requests
 
-Pull requests are welcome! Please create them against the [dev branch](https://github.com/meanie/angular-log/tree/dev) of the repository.
-
 Please report any bugs, issues, suggestions and feature requests in the [meanie-angular-log issue tracker](https://github.com/meanie/angular-log/issues).
 
 ## Contributing
+
+Pull requests are welcome! Please create them against the [dev branch](https://github.com/meanie/angular-log/tree/dev) of the repository.
 
 If you would like to contribute to Meanie, please check out the [Meanie contributing guidelines](https://github.com/meanie/meanie/blob/master/CONTRIBUTING.md).
 
