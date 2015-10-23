@@ -1,5 +1,5 @@
 /**
- * meanie-angular-log - v0.3.4 - 31-6-2015
+ * meanie-angular-log - v1.0.0 - 23-9-2015
  * https://github.com/meanie/angular-log
  *
  * Copyright (c) 2015 Adam Buczynski <me@adambuczynski.com>

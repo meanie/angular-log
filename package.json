@@ -1,7 +1,7 @@
 {
   "name": "meanie-angular-log",
   "description": "AngularJS module to replace and extend the built in $log service",
-  "version": "0.3.4",
+  "version": "1.0.0",
   "homepage": "https://github.com/meanie/angular-log",
   "author": {
     "name": "Adam Buczynski",
