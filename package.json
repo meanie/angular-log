@@ -1,7 +1,7 @@
 {
   "name": "meanie-angular-log",
   "description": "An extended drop in replacement for the built in Angular $log service",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "homepage": "https://github.com/meanie/angular-log",
   "author": {
     "name": "Adam Buczynski",
