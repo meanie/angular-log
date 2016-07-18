@@ -12,9 +12,7 @@ An extended drop in replacement for the built in Angular $log service
 
 ## Installation
 
-You can install this package using `npm` or `bower`.
-
-### npm
+You can install this package using `npm`:
 
 ```shell
 npm install meanie-angular-log --save
@@ -24,20 +22,6 @@ Include the script `node_modules/meanie-angular-log/release/meanie-angular-log.j
 
 ```html
 <script src="node_modules/meanie-angular-log/release/meanie-angular-log.js"></script>
-```
-
-Add `Log.Service` as a dependency for your app.
-
-### bower
-
-```shell
-bower install meanie-angular-log
-```
-
-Include the script `bower_components/meanie-angular-log/release/meanie-angular-log.js` in your build process, or add it via a `<script>` tag to your `index.html`:
-
-```html
-<script src="bower_components/meanie-angular-log/release/meanie-angular-log.js"></script>
 ```
 
 Add `Log.Service` as a dependency for your app.
