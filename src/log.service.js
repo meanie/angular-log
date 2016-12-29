@@ -41,8 +41,8 @@ angular.module('Log.Service', [])
   this.$get = function($window) {
 
     //Get enabled/disabled log methods
-    var enabled = this.enabled;
-    var disabled = this.disabled;
+    let enabled = this.enabled;
+    let disabled = this.disabled;
 
     /**
      * Helper to check if a method is enabled
@@ -96,29 +96,30 @@ angular.module('Log.Service', [])
       }
 
       //Get console and log function
-      var console = $window.console || {};
-      var logFn = console[method] || console.log || angular.noop;
-      var hasApply = false;
+      let console = $window.console || {};
+      let logFn = console[method] || console.log || angular.noop;
+      let hasApply = false;
 
-      //Note: reading logFn.apply throws an error in IE11 in IE8 document mode.
+      //NOTE: reading logFn.apply throws an error in IE11 in IE8 document mode.
       //The reason behind this is that console.log has type "object" in IE8...
       try {
         hasApply = !!logFn.apply;
-      } catch (e) {}
+      }
+      catch (e) {
+        //Noop
+      }
 
       //Function present
       if (hasApply) {
-        return function() {
-          var args = [];
-          angular.forEach(arguments, function(arg) {
-            args.push(formatError(arg));
-          });
+        return function(...args) {
+          args = args.map(formatError);
           return logFn.apply(console, args);
         };
       }
 
-      //We are IE which either doesn't have window.console => this is noop and we do nothing,
-      //or we are IE where console.log doesn't have apply so we log at least first 2 args
+      //We are IE which either doesn't have window.console => this is noop and
+      //we do nothing, or we are IE where console.log doesn't have apply so we
+      //log at least first 2 args
       return function(arg1, arg2) {
         logFn(arg1, arg2 === null ? '' : arg2);
       };
@@ -134,7 +135,7 @@ angular.module('Log.Service', [])
       assert: logger('assert'),
       clear: logger('clear'),
       trace: logger('trace'),
-      dir: logger('dir')
+      dir: logger('dir'),
     };
   };
 });
