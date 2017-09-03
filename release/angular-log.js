@@ -1,7 +1,7 @@
 /**
- * meanie-angular-log * https://github.com/meanie/angular-log
+ * @meanie/angular-log * https://github.com/meanie/angular-log
  *
- * Copyright (c) 2016 Adam Reis <adam@reis.nz>
+ * Copyright (c) 2017 Adam Reis <adam@reis.nz>
  * License: MIT
  */
 (function (window, angular, undefined) {
@@ -107,25 +107,29 @@
         var logFn = console[method] || console.log || angular.noop;
         var hasApply = false;
 
-        //Note: reading logFn.apply throws an error in IE11 in IE8 document mode.
+        //NOTE: reading logFn.apply throws an error in IE11 in IE8 document mode.
         //The reason behind this is that console.log has type "object" in IE8...
         try {
           hasApply = !!logFn.apply;
         } catch (e) {}
+        //Noop
+
 
         //Function present
         if (hasApply) {
           return function () {
-            var args = [];
-            angular.forEach(arguments, function (arg) {
-              args.push(formatError(arg));
-            });
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+
+            args = args.map(formatError);
             return logFn.apply(console, args);
           };
         }
 
-        //We are IE which either doesn't have window.console => this is noop and we do nothing,
-        //or we are IE where console.log doesn't have apply so we log at least first 2 args
+        //We are IE which either doesn't have window.console => this is noop and
+        //we do nothing, or we are IE where console.log doesn't have apply so we
+        //log at least first 2 args
         return function (arg1, arg2) {
           logFn(arg1, arg2 === null ? '' : arg2);
         };

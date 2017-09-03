@@ -1,6 +1,6 @@
-# meanie-angular-log
+# @meanie/angular-log
 
-[![npm version](https://img.shields.io/npm/v/meanie-angular-log.svg)](https://www.npmjs.com/package/meanie-angular-log)
+[![npm version](https://img.shields.io/npm/v/@meanie/angular-log.svg)](https://www.npmjs.com/package/@meanie/angular-log)
 [![node dependencies](https://david-dm.org/meanie/angular-log.svg)](https://david-dm.org/meanie/angular-log)
 [![github issues](https://img.shields.io/github/issues/meanie/angular-log.svg)](https://github.com/meanie/angular-log/issues)
 [![codacy](https://img.shields.io/codacy/4e1e3e31e0ed44759bea0cac8ef22d76.svg)](https://www.codacy.com/app/meanie/angular-log)
@@ -12,16 +12,20 @@ An extended drop in replacement for the built in Angular $log service
 
 ## Installation
 
-You can install this package using `npm`:
+You can install this package using `yarn` or `npm`:
 
 ```shell
-npm install meanie-angular-log --save
+#yarn
+yarn add @meanie/angular-log
+
+#npm
+npm install @meanie/angular-log --save
 ```
 
-Include the script `node_modules/meanie-angular-log/release/meanie-angular-log.js` in your build process, or add it via a `<script>` tag to your `index.html`:
+Include the script `node_modules/@meanie/angular-log/release/angular-log.js` in your build process, or add it via a `<script>` tag to your `index.html`:
 
 ```html
-<script src="node_modules/meanie-angular-log/release/meanie-angular-log.js"></script>
+<script src="node_modules/@meanie/angular-log/release/angular-log.js"></script>
 ```
 
 Add `Log.Service` as a dependency for your app.
@@ -48,7 +52,7 @@ Note that due to services not being available in the configuration phase of Angu
 
 ## Issues & feature requests
 
-Please report any bugs, issues, suggestions and feature requests in the [meanie-angular-log issue tracker](https://github.com/meanie/angular-log/issues).
+Please report any bugs, issues, suggestions and feature requests in the [@meanie/angular-log issue tracker](https://github.com/meanie/angular-log/issues).
 
 ## Contributing
 
@@ -62,4 +66,4 @@ Pull requests are welcome! If you would like to contribute to Meanie, please che
 
 (MIT License)
 
-Copyright 2015-2017, [Adam Reis](http://adam.reis.nz)
+Copyright 2015-2017, [Adam Reis](https://adam.reis.nz)
