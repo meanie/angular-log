@@ -2,7 +2,7 @@
  * meanie-angular-log - v1.1.1 - 10-1-2016
  * https://github.com/meanie/angular-log
  *
- * Copyright (c) 2016 Adam Buczynski <me@adambuczynski.com>
+ * Copyright (c) 2016 Adam Reis <adam@reis.nz>
  * License: MIT
  */
 (function(window, angular, undefined) {'use strict';
